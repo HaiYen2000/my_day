@@ -20,10 +20,38 @@ android {
 }
 
 dependencies {
+    //Definite a version
+    def recyclerview_version = "1.1.0-rc01"
+    def cardview_version = "1.0.0"
+    def volley_version = "1.1.1"
+    def fan_version = "1.0.2"
+    def glide_version = "4.10.0"
+    def srf_version = "1.1.0-alpha02"
+    def gson_version = "2.8.6"
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //Library
+    //Gson
+    implementation "com.google.code.gson:gson:$gson_version"
+    //Volley
+    //implementation 'com.android.volley:volley:1.1.1'
+    //Fast android networking
+    implementation "com.amitshekhar.android:android-networking:$fan_version"
+    //Retrofit
+    //Recycle view
+    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
+    //card view
+    implementation "androidx.cardview:cardview:$cardview_version"
+    //glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+    //SwipeRefreshLayout
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:$srf_version"
+
 }
