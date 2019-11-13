@@ -1,4 +1,4 @@
-package com.lamlt.my_day;
+package com.lamlt.my_day.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.lamlt.my_day.R;
 import com.lamlt.my_day.pref.PrefManager;
 
 public class IntroActivity extends AppCompatActivity {

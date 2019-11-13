@@ -1,6 +1,5 @@
-package com.lamlt.my_day;
+package com.lamlt.my_day.activity;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,6 +9,8 @@ import android.os.Handler;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.lamlt.my_day.R;
 
 
 public class SplashActivity extends AppCompatActivity {
