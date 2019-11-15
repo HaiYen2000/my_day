@@ -8,25 +8,25 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.lamlt.my_day.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="@string/menu_calendar"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.lamlt.my_day.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_weather"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.lamlt.my_day.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_note"
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
         android:id="@+id/nav_tools"
         android:name="com.lamlt.my_day.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
+        android:label="@string/menu_setting"
         tools:layout="@layout/fragment_tools" />
 
     <fragment
@@ -38,6 +38,6 @@
     <fragment
         android:id="@+id/nav_send"
         android:name="com.lamlt.my_day.ui.send.SendFragment"
-        android:label="@string/menu_send"
+        android:label="@string/menu_about"
         tools:layout="@layout/fragment_send" />
 </navigation>
