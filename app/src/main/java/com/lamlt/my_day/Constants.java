@@ -19,4 +19,6 @@ public class Constants {
             "" + NOTE_DATE + " TEXT NOT NULL" +
             ")";
 
+    public static final int NUM_COLUMNS = 2;
+
 }
