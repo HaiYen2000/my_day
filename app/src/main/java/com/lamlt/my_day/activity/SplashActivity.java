@@ -3,6 +3,7 @@ package com.lamlt.my_day.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,10 +13,12 @@ import android.view.WindowManager;
 
 import com.lamlt.my_day.R;
 
+import static com.lamlt.my_day.Constants.SPLASH_TIME_OUT;
+
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static int SPLASH_TIME_OUT = 3000;
+    MediaPlayer startupSound;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,8 @@ public class SplashActivity extends AppCompatActivity {
         }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        startupSound = MediaPlayer.create(SplashActivity.this, R.raw.android_q_startup);
+        startupSound.start();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -44,5 +49,10 @@ public class SplashActivity extends AppCompatActivity {
         },SPLASH_TIME_OUT);
     }
 
-
+    @Override
+    protected void onPause() {
+        super.onPause();
+        startupSound.release();
+        finish();
+    }
 }
