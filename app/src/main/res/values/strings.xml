@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">My Day</string>
+    <string name="app_version">Ver 1.0</string>
+    <string name="app_company">FPT Polytechnic</string>
 
     <!--Intro Slider-->
     <string name="next">NEXT</string>
@@ -37,7 +39,11 @@
     <string name="menu_share">Share</string>
     <string name="menu_about">About</string>
 
+    <!--SettingFragment-->
+    <string name="setting_receive_notification">Allow app to receive notification</string>
+
     <!--Common-->
     <string name="image_description" />
+
 
 </resources>

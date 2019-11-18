@@ -1,16 +1,16 @@
-package com.lamlt.my_day.ui.send;
+package com.lamlt.my_day.ui.note;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SendViewModel extends ViewModel {
+public class NoteViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SendViewModel() {
+    public NoteViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is send fragment");
+        mText.setValue("This is note fragment");
     }
 
     public LiveData<String> getText() {

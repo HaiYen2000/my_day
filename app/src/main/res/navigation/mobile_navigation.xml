@@ -3,31 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_calendar">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.lamlt.my_day.ui.home.HomeFragment"
+        android:id="@+id/nav_calendar"
+        android:name="com.lamlt.my_day.ui.calendar.CalendarFragment"
         android:label="@string/menu_calendar"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_calendar" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.lamlt.my_day.ui.gallery.GalleryFragment"
+        android:id="@+id/nav_weather"
+        android:name="com.lamlt.my_day.ui.weather.WeatherFragment"
         android:label="@string/menu_weather"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_weather" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.lamlt.my_day.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_note"
+        android:name="com.lamlt.my_day.ui.note.NoteFragment"
         android:label="@string/menu_note"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_note" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.lamlt.my_day.ui.tools.ToolsFragment"
+        android:id="@+id/nav_setting"
+        android:name="com.lamlt.my_day.ui.setting.SettingFragment"
         android:label="@string/menu_setting"
-        tools:layout="@layout/fragment_tools" />
+        tools:layout="@layout/fragment_setting" />
 
     <fragment
         android:id="@+id/nav_share"
@@ -36,8 +36,9 @@
         tools:layout="@layout/fragment_share" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.lamlt.my_day.ui.send.SendFragment"
+        android:id="@+id/nav_about"
+        android:name="com.lamlt.my_day.ui.about.AboutFragment"
         android:label="@string/menu_about"
-        tools:layout="@layout/fragment_send" />
+        tools:layout="@layout/fragment_about" />
+
 </navigation>
