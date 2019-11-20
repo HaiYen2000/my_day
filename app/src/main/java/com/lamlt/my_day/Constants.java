@@ -21,4 +21,6 @@ public class Constants {
 
     public static final int NUM_COLUMNS = 2;
 
+    public static int SPLASH_TIME_OUT = 6000;
+
 }

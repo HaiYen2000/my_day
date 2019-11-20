@@ -34,7 +34,7 @@
     <string name="menu_about">About</string>
 
     <!--SettingFragment-->
-    <string name="setting_receive_notification">Allow app to receive notification</string>
+    <string name="setting_allow_location_service">Allow app to access your location</string>
 
     <!--Common-->
     <string name="image_description" />
