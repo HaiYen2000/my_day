@@ -61,10 +61,9 @@ dependencies {
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:$srf_version"
     //CircleImageView
     implementation "de.hdodenhof:circleimageview:$civ_version"
-
-//timesquare
+    //timesquare
     implementation 'com.squareup:android-times-square:1.6.5@aar'
     //week view calendar custom
-    compile 'com.github.alamkanak:android-week-view:1.2.6'
+    implementation 'com.github.alamkanak:android-week-view:1.2.6'
 
 }

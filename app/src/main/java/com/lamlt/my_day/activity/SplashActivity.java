@@ -48,8 +48,6 @@ public class SplashActivity extends AppCompatActivity {
             }
         },SPLASH_TIME_OUT);
     }
-<<<<<<< HEAD
-=======
 
     @Override
     protected void onPause() {
@@ -57,5 +55,4 @@ public class SplashActivity extends AppCompatActivity {
         startupSound.release();
         finish();
     }
->>>>>>> c984b3b059e6c70be967c29d8a663ea2ae715124
 }
