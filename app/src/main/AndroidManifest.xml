@@ -3,12 +3,9 @@
     package="com.lamlt.my_day">
 
     <uses-permission android:name="android.permission.INTERNET" />
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-=======
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
->>>>>>> c984b3b059e6c70be967c29d8a663ea2ae715124
 
     <application
         android:allowBackup="true"
