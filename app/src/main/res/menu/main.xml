@@ -6,4 +6,10 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+<!--    <item-->
+<!--        android:id="@+id/viewcalendar"-->
+<!--        android:icon="@drawable/ic_apps_black_24dp"-->
+<!--        android:title="Help"-->
+<!--        app:showAsAction="withText|ifRoom"-->
+<!--        />-->
 </menu>

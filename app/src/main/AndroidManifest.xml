@@ -3,6 +3,7 @@
     package="com.lamlt.my_day">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.DailyViewActivity"></activity>
+        <activity android:name=".activity.WeeklyViewActivity" />
+        <activity android:name=".activity.YearlyViewActivity" />
+        <activity android:name=".activity.MonthlyViewActivity" />
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/title_activity_main"

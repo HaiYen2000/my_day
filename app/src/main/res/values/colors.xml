@@ -8,6 +8,10 @@
     <color name="colorBottomToolbar">#FAFAFA</color>
     <color name="colorAppBackground">#E6E6E6</color>
 
+
+<!--daily view-->
+    <color name="colorDivider">#aaaaaa</color>
+    <color name="colorWhite">#ffffff</color>
     <!--Intro Slider-->
     <!-- Screens background color-->
     <color name="bg_screen1">#f64c73</color>

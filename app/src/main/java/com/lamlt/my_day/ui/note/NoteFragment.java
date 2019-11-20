@@ -18,9 +18,11 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import com.lamlt.my_day.R;
 import com.lamlt.my_day.adapter.StaggeredRecycleViewNoteAdapter;
 import com.lamlt.my_day.base.GridSpacingItemDecoration;
+import com.lamlt.my_day.dao.NoteDAO;
 import com.lamlt.my_day.fragment.NoteCreationFragment;
 import com.lamlt.my_day.model.Note;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -30,9 +32,13 @@ public class NoteFragment extends Fragment {
 
     private NoteViewModel noteViewModel;
     private RecyclerView recyclerView;
-    private List<Note> mNotes;
+    private List<Note> mNotes=new ArrayList<>();
     private StaggeredRecycleViewNoteAdapter staggeredRecycleViewNoteAdapter;
     private Button createNote;
+
+
+    NoteDAO noteDAO;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -41,6 +47,20 @@ public class NoteFragment extends Fragment {
         final View root = inflater.inflate(R.layout.fragment_note, container, false);
         initViews(root);
         recyclerView.setHasFixedSize(true);
+        Note note = new Note(01, "d", "dgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg", "djjjjjjjjjjjjj");
+        Note note1 = new Note(01, "djjjjjjjjjjjjjjjjj", "d", "dggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg");
+        Note note2 = new Note(01, "d", "d", "djjjjjjjjjjj");
+        Note note3 = new Note(01, "d", "d", "ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggd");
+        Note note4 = new Note(01, "djjjjffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffjjjjjjfdjjjjjjj", "djjjjjjjjjj", "d");
+        Note note5 = new Note(01, "d", "d", "d");
+        Note note6 = new Note(01, "djjjjjjjjjjj", "d", "d");
+        mNotes.add(note);
+        mNotes.add(note1);
+        mNotes.add(note2);
+        mNotes.add(note3);
+        mNotes.add(note4);
+        mNotes.add(note5);
+        mNotes.add(note6);
         staggeredRecycleViewNoteAdapter = new StaggeredRecycleViewNoteAdapter(mNotes, root.getContext());
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(NUM_COLUMNS, 1);
         recyclerView.setLayoutManager(staggeredGridLayoutManager);
@@ -50,6 +70,7 @@ public class NoteFragment extends Fragment {
         final float scale = getResources().getDisplayMetrics().density;
         int spacing = (int) (1 * scale + 0.5f);
         recyclerView.addItemDecoration(new GridSpacingItemDecoration(spacing));
+
 
         recyclerView.setAdapter(staggeredRecycleViewNoteAdapter);
 
@@ -72,7 +93,7 @@ public class NoteFragment extends Fragment {
         return root;
     }
 
-    private void initViews(View v){
+    private void initViews(View v) {
         recyclerView = v.findViewById(R.id.note_recycle_view);
         createNote = v.findViewById(R.id.create_new_note);
     }
